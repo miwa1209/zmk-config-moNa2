@@ -103,20 +103,20 @@
         default_layer {
             bindings = <
 &kp Q             &lt 1 W       &lt 2 E       &lt 3 R   &lt 5 T                                           &kp Y                &lt 1 U  &lt 2 I                  &lt 3 O                   &lt 5 P
-&kp A             &lt 1 S       &lt 2 D       &lt 3 F   &lt 5 G                &kp UP_ARROW               &kp H                &lt 1 J  &lt 2 K                  &lt 3 L                   &mt RC(RIGHT_SHIFT) MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &kp AT       &kp DOWN_ARROW             &kp N                &kp M    &mt RS(RIGHT_GUI) COMMA  &mt RA(RIGHT_GUI) PERIOD  &kp SLASH
+&kp A             &lt 1 S       &lt 2 D       &lt 3 F   &lt 5 G                &kp LEFT_PARENTHESIS       &kp H                &lt 1 J  &lt 2 K                  &lt 3 L                   &mt RC(RIGHT_SHIFT) MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V     &kp B     &kp AT       &kp RIGHT_PARENTHESIS      &kp N                &kp M    &mt RS(RIGHT_GUI) COMMA  &mt RA(RIGHT_GUI) PERIOD  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mkp MB2  &mkp MB1  &kp SPACE    &mt RIGHT_SHIFT BACKSPACE  &mt RIGHT_GUI ENTER                                                              &kp DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         NUM {
             bindings = <
-&kp EQUAL  &kp BSPC       &kp APOS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                           &kp N0     &kp N1  &kp N2  &kp N3  &kp SPACE
-&kp SEMI   &kp COLON      &kp ASTRK        &kp LEFT_BRACE        &kp RIGHT_BRACE                    &kp MINUS    &kp DOT    &kp N4  &kp N5  &kp N6  &kp FSLH
-&kp AT     &kp HASH       &kp AMPS         &kp LBKT              &kp RBKT               &kp BSLH    &kp PLUS     &kp COMMA  &kp N7  &kp N8  &kp N9  &kp PERCENT
-&kp GLOBE  &kp RS(CARET)  &kp EXCLAMATION  &kp LSHFT             &kp LGUI               &kp LALT    &kp LS(TAB)  &kp TAB                            &code_px
+&kp EQUAL  &kp DOUBLE_QUOTES  &kp APOS         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                           &kp N0     &kp N1  &kp N2  &kp N3  &kp SPACE
+&kp SEMI   &kp COLON          &kp ASTRK        &kp LEFT_BRACE        &kp RIGHT_BRACE                    &kp MINUS    &kp DOT    &kp N4  &kp N5  &kp N6  &kp FSLH
+&kp AT     &kp HASH           &kp AMPS         &kp LBKT              &kp RBKT               &kp BSLH    &kp PLUS     &kp COMMA  &kp N7  &kp N8  &kp N9  &kp PERCENT
+&kp GLOBE  &kp RS(CARET)      &kp EXCLAMATION  &kp LSHFT             &kp LGUI               &kp LALT    &kp LS(TAB)  &kp TAB                            &code_px
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LS(TAB)) LG(TAB)>;
